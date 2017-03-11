@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextAssessmentNameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Assessment name"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/editTextAssessmentScoreInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="Score"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="@dimen/sizeTextMedium" />
+
+        <EditText
+            android:id="@+id/editTextAssessmentTotalInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:hint="Total"
+            android:inputType="number"
+            android:maxLength="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTextViewAssessmentTypeSelection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.69"
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="Assessment type"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/editTextAssessmentGradePortionInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.07"
+            android:gravity="right"
+            android:hint="Portion"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <TextView
+            android:id="@+id/textViewPercentSign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.82"
+            android:text="%"
+            android:textSize="@dimen/sizeTextMedium" />
+    </LinearLayout>
+</LinearLayout>

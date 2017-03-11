@@ -1,0 +1,4 @@
+<resources>
+    <item name="action_add_item" type="id">0</item>
+    <item name="action_delete_item" type="id">1</item>
+</resources>

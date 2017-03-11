@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    android:gravity="center">
+
+    <com.hookedonplay.decoviewlib.DecoView
+        android:id="@+id/dynamicArcView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textViewCourseLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorTextMid"
+        android:textSize="@dimen/sizeTextLarge" />
+
+    <TextView
+        android:id="@+id/textViewCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dynamicArcView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorTextDark"
+        android:textSize="@dimen/sizeTextSmall" />
+</RelativeLayout>

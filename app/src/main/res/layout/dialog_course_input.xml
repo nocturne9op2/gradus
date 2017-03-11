@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextCourseNameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.69"
+            android:hint="Course name"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/editTextCourseUnitsInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.89"
+            android:hint="Units"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxCourseWeighted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Weighted"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/sizeTextMedium" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="sizeTextSmall">14sp</dimen>
+    <dimen name="sizeTextMedium">18sp</dimen>
+    <dimen name="sizeTextLarge">22sp</dimen>
+    <dimen name="sizeTextExtraLarge">44sp</dimen>
+</resources>
